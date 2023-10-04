@@ -1,2 +1,10 @@
 # IoT & Cloud Server Based Wearable Health Monitoring System
- 
+ During the construction of this project we had isolated each and every step and had undergone proper planning and made blueprints of each step. We first took into account all of the preliminary tests and we realized that the most common and vital preliminary tests were the oxymeter, temperature and BPM test. Hence we decided to use the following sensors to cater to our requirements. 
+1. LM35
+2. MAX30100
+We also decided that since our project might be used in isolation centers , we should also ensure the comfort level of the patient by taking into account the humidity of the room, as with increasing humidity a patient might feel uncomfortable which might further contribute into the fever of the sensor. So we also decided to take the DHT-11 humidity sensor and integrate it into our project as well.  Next we tested each and every sensor involved and calibrated it together as it sent garbage values initially to the Arduino Console. We went through the datasheet and header files of each and every component individually and compiled all pseudocodes and made common variables and reduced memory wastage. After testing all the sensors we decided to add the LCD and tried sending all the console values and displaying it in the LCD screen together after integrating them with the Arduino Uno. After integrating all of this we decided to simultaneously work on the nodemcu and the website. 
+
+
+We first made a simple web client server which worked on showing a random integer generated from the Arduino via the nodemcu. After many tries we started building the website and started transmitting sensor values after sorting them correctly, as shown in the LCD. 
+Then we used the Wi-Fi feature of the nodemcu by connecting it to a mobile hotspot and transmitted it to a specific email after making tabular denotations and compiling a spreadsheet, all of the sensor data was sent after each successful trial within a time-lag of 5 seconds between updation via the PHP client and updated continuously within a loop for as long as the circuit was turned on.
+
